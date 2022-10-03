@@ -2,17 +2,21 @@
 
 Really basic model serving template. Uses FastAPI in a Docker.
 
-Test it (not in docker):
+This API vectorizes sentences. Send it some text, get a vector back.
+
+### Usage 
+
+Run it (not in docker):
 
 ```
 pip install -r requirements.txt
 python server.py
 python client.py
 ```
-Client.py will print the model info and a sample encoding. 
 
+`client.py` will print the model info and a sample encoding. 
 
-You can also browse [the docs endpoint](http://localhost/docs) and try things interactively there.
+You can also browse [the docs endpoint](http://127.0.0.1:8000/docs) and try things interactively there.
 
 Run in docker:
 ```
